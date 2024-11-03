@@ -195,7 +195,7 @@ class WxRequest {
   }
 
   /**
-   * @description upload 实例方法，用来对 wx.uploadFile 进行封装。
+   * @description upload 实例方法，用来对 wx.uploadFile 进行封装
    * @param {*} url 文件的上传地址、接口地址
    * @param {*} filePath 要上传的文件资源路径
    * @param {*} name 文件对应的 key

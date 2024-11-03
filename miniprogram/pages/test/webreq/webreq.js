@@ -1,4 +1,12 @@
-import instance from '../../../utils/request'
+import instance from '../../../utils/requestTest'
+const res = instance.get('/user', { k: 1, g: 2 })
+res
+  .then((res) => {
+    console.log('then', res)
+  })
+  .catch((err) => {
+    console.log('catch', err)
+  })
 Page({
   /**
    * 页面的初始数据
