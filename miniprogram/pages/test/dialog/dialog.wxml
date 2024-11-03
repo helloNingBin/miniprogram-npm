@@ -1,0 +1,6 @@
+<!--pages/test/dialog/dialog.wxml-->
+<text>pages/test/dialog/dialog.wxml</text>
+<button bindtap="showToast" data-percent="10">showToast</button>
+<button bindtap="showLoading" data-percent="10">showLoading</button>
+<button bindtap="closeLoading" data-percent="10">closeLoading</button>
+<button bindtap="showModal" data-percent="10">showModal</button>

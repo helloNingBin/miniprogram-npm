@@ -1,0 +1,3 @@
+<button bindtap="req">req</button>
+<button bindtap="requestHandler">通过 then 和 catch 接收返回的值</button>
+<button bindtap="requestHandler2">通过 await 和 async 接收返回的值</button>
