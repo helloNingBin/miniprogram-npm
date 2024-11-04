@@ -10,7 +10,7 @@ class WxRequest {
     header: {
       'Content-type': 'application/json' // 设置数据的交互格式
     },
-    timeout: 60000, // 默认的超时时长，小程序默认的超时时长是 1 分钟
+    timeout: 6000, // 默认的超时时长，小程序默认的超时时长是 1 分钟
     isLoading: true // 控制是否使用默认的 loading，默认值是 true 表示使用默认的 loading
   }
   constructor(params = {}) {
