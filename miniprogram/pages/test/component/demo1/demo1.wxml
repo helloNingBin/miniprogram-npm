@@ -1,0 +1,7 @@
+<view class="inner">
+  {{innerText}}
+</view>
+<view class="ounner">
+ <text>==></text> {{innerText}}
+</view>
+<slot></slot>

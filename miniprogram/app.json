@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/test/webreq/webreq",
+  "entryPagePath": "pages/test/component/componentMain",
   "pages": [
     "pages/index/index",
     "pages/category/category",
@@ -15,7 +15,9 @@
     "pages/settings/settings",
     "pages/profile/profile",
     "pages/test/dialog/dialog",
-    "pages/test/webreq/webreq"
+    "pages/test/webreq/webreq",
+    "pages/test/component/componentMain",
+    "pages/test/component/demo1/demo1"
   ],
   "window": {
     "backgroundTextStyle": "light",

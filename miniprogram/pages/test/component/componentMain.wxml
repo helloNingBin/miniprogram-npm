@@ -1,0 +1,3 @@
+<view>
+  <custom-demo1  inner-text="Some text"></custom-demo1>
+</view>

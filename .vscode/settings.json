@@ -26,7 +26,7 @@
   },
 
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "HookyQR.beautify"
   },
 
   // Prettier 的一个配置项，用于指定哪些文件类型需要使用 Prettier 进行格式化
