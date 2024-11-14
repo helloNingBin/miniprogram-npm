@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "custom-demo1": "./demo1/demo1"
+    "custom-demo1": "./demo1/demo1",
+    "custom-checkbox": "./custom-checkbox/custom-checkbox"
   }
 }

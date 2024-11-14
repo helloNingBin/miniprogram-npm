@@ -1,0 +1,11 @@
+<view class="custom-checkbox-container">
+  <view class="custom-checkbox-box">
+    <checkbox checked="{{ isChecked }}" bindtap="updateChecked" />
+    <label class="mylable">{{labelText}}</label>
+  </view>
+</view>
+<view>
+<text>ifelse:{{ifelse}}</text>
+<text wx:if="{{ifelse > 10}}">aaa</text>
+<text wx:else>bbbbb{{obs}}</text>
+</view>

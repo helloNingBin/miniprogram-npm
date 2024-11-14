@@ -5,16 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputValue: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+       let animal = {
+         height: 99
+       }
+       let user = {
+         name: 'jakc',
+         age: 8
+       }
+       user = {
+         ...user,
+         ...animal
+       }
+       console.log('======>',user)
   },
-
+  onInput(e) {
+    // 获取输入框的值并更新 inputValue
+    this.setData({
+      inputValue: e.detail.value
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

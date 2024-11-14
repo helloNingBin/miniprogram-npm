@@ -1,7 +1,9 @@
 <view class="inner">
   {{innerText}}
+  <slot name="inner-slot"/>
 </view>
 <view class="ounner">
  <text>==></text> {{innerText}}
+ <slot name="ounner-slot"/>
 </view>
 <slot></slot>

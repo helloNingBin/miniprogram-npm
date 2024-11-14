@@ -1,3 +1,13 @@
 <view>
-  <custom-demo1  inner-text="Some text"></custom-demo1>
+  <custom-demo1  inner-text="Some text">
+    <view slot="ounner-slot">ounner-slot</view>
+    <view slot="inner-slot">inner-slot</view>
+    <view class="def">这是默认插槽的内容</view>
+  </custom-demo1>
 </view>
+<view>
+   <custom-checkbox labelText="{{inputValue}}" ifelse="2"/>
+</view>
+<text class="parentText">parent text</text>
+
+<input value="{{inputValue}}" bindinput="onInput" placeholder="请输入内容" />
