@@ -36,15 +36,15 @@ Component({
       })
     },
     onLoad: function() {
-      console.log("=======onload custom-checkbox====")
+      //console.log("=======onload custom-checkbox====")
     }
   },
   observers:{
     obs:function(n,o){
-        console.log("obs",n,o)
+        //console.log("obs",n,o)
     },
     labelText:function(n,o){
-      console.log("labelText",n,o)
+      //console.log("labelText",n,o)
     }
   }
 })

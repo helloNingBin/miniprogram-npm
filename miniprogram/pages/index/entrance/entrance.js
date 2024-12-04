@@ -9,7 +9,8 @@ Component({
     cateList: {
       type: Array,
       value: []
-    }
+    },
+    picPath: String
   },
 
   /**

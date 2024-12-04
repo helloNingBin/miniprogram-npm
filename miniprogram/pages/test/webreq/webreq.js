@@ -1,12 +1,5 @@
-import instance from '../../../utils/requestTest'
-const res = instance.get('/user', { k: 1, g: 2 })
-res
-  .then((res) => {
-    console.log('then', res)
-  })
-  .catch((err) => {
-    console.log('catch', err)
-  })
+import instance from '../../../utils/request'
+
 Page({
   /**
    * 页面的初始数据
@@ -16,21 +9,21 @@ Page({
     wx.request({
       url: 'http://139.159.196.163:8990/user',
       success: (res) => {
-        console.log('成功', res)
+        //console.log('成功', res)
       },
       fail: (err) => {
-        console.log('失败', err)
+        //console.log('失败', err)
       },
       complete: () => {
-        console.log('请求完成')
+        //console.log('请求完成')
       }
     })
     this.reqPromise({ url: 'http://139.159.196.163:8990/user' })
       .then((res) => {
-        console.log('成功', res)
+        //console.log('成功', res)
       })
       .catch((err) => {
-        console.log('失败', err)
+        //console.log('失败', err)
       })
   },
   reqPromise(options) {
@@ -50,10 +43,10 @@ Page({
         method: 'GET'
       })
       .then((res) => {
-        console.log(res)
+        //console.log(res)
       })
       .catch((err) => {
-        console.log(err)
+        //console.log(err)
       })
   },
   async requestHandler2() {
@@ -63,7 +56,7 @@ Page({
       method: 'GET'
     })
 
-    console.log(res)
+    //console.log(res)
   },
   /**
    * 生命周期函数--监听页面加载

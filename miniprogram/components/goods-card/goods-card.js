@@ -1,4 +1,6 @@
 // components/goods-card/index.js
+const app = getApp()
+//console.log(app.globalData.picPath);
 Component({
   /**
    * 组件的属性列表
@@ -14,7 +16,9 @@ Component({
   /**
    * 组件的初始数据
    */
-  data: {},
+  data: {
+    picPath: app.globalData.picPath + 'picture/'
+  },
 
   /**
    * 组件的方法列表

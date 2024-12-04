@@ -17,16 +17,16 @@ Page({
       title: 'title',
       mask: true,
       success: (res) => {
-        console.info('success:' + JSON.stringify(res))
+        //console.info('success:' + JSON.stringify(res))
         setTimeout(() => {
           this.closeLoading()
         }, 3000)
       },
       fail: (res) => {
-        console.info('fail:' + JSON.stringify(res))
+        //console.info('fail:' + JSON.stringify(res))
       },
       complete: (res) => {
-        console.info('complete:' + JSON.stringify(res))
+        //console.info('complete:' + JSON.stringify(res))
       }
     })
   },
@@ -43,12 +43,12 @@ Page({
       // 接口调用结束的回调函数（调用成功、失败都会执行）
       complete({ confirm, cancel }) {
         if (confirm) {
-          console.log('用户点击了确定')
+          //console.log('用户点击了确定')
           return
         }
 
         if (cancel) {
-          console.log('用户点击了取消')
+          //console.log('用户点击了取消')
         }
       }
     })

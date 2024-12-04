@@ -1,5 +1,4 @@
 {
-  "entryPagePath": "pages/test/component/componentMain",
   "pages": [
     "pages/index/index",
     "pages/category/category",

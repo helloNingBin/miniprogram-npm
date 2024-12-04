@@ -8,15 +8,26 @@
     interval="2000"
     duration="1000"
     indicator-color="rgba(0, 0, 0, .3)"
+    indicator-dots="true"
+    bindchange="getSwiperIndex"
   >
-    <block wx:for="{{ bannerList }}" wx:key="index">
+    <block wx:for="{{ bannerList }}" wx:key="index" wx:for-item="obj">
       <swiper-item class="swiper-item">
         <navigator
+          wx:if="{{obj.type == 0}}"
           class="navigator"
           url="/pages/goods/detail/detail?goodsId=id"
         >
-          <image class="img" src="{{ item }}"></image>
+          <image class="img" src="{{picPath}}{{ obj.url }}"></image>
         </navigator>
+        <video
+          wx:elif="{{obj.type == 1}}"
+          src="{{picPath}}{{ obj.url }}"
+          controls="true"
+          autoplay="false"
+          loop="false"
+          class="slide-video"
+        />
       </swiper-item>
     </block>
   </swiper>
@@ -28,7 +39,7 @@
     <text
       wx:for="{{bannerList.length}}"
       wx:key="id"
-      class="{{ 'active rectangle' }}"
+      class="{{index === activeIndex ? 'active rectangle' : 'rectangle'}}"
     ></text>
   </view>
 </view>

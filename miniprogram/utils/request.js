@@ -1,3 +1,4 @@
+import config from '../config'
 // 创建 WxRequest 类
 // 通过类的方式来进行封装，会让代码更加具有复用性
 // 也可以方便添加新的属性和方法
@@ -205,5 +206,22 @@ class WxRequest {
     return this.request(Object.assign({ url, filePath, name, method: 'UPLOAD' }, config))
   }
 }
+const request = new WxRequest({
+  baseURL: config.apiBaseUrl
+})
+request.interceptors.request = (config) => {
+  config.data.storeType = 1
+  return config
+}
+request.interceptors.response = (response) => {
+  const { response: res, isSuccess } = response
 
-export default WxRequest
+  // isSuccess: false 表示是网络超时或其他问题，提示 网络异常，同时将返回即可
+  if (!isSuccess) {
+    wx.toast('网络异常，请稍后重试~')
+    // 如果请求错误，将错误的结果返回出去
+    return res
+  }
+  return response.data
+}
+export default request

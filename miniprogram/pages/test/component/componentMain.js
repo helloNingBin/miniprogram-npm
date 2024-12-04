@@ -23,7 +23,7 @@ Page({
          ...user,
          ...animal
        }
-       console.log('======>',user)
+       //console.log('======>',user)
   },
   onInput(e) {
     // 获取输入框的值并更新 inputValue
